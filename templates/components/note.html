@@ -1,12 +1,22 @@
-<div class="card">
-    <h3 class="card-title">{title}</h3>
+<div class="card {id}">
+    <div class="title-container">
+        <h3 class="card-title">{title}</h3>
+        <div class="buttons-container">
+            <form class="delete-card" method="post">
+            <input type="hidden" name="delete" value="{id}" />
+            <button class="delete-btn" type="submit">
+                <img class="delete-icon" src="../../img/delete24.png" />
+            </button>
+        </form>
+        <form class="edit-card" method="post">
+            <input type="hidden" name="edit" value="{id}" />
+            <button class="edit-btn" type="submit">
+                <img class="edit-icon" src="../../img/edit24.png" />
+            </button>
+        </form>
+        </div>
+    </div>
     <div class="card-content">
         <p>{details}</p>
     </div>
-        <form class="delete-card" method="post">
-            <input type="hidden" name="delete" value="{id}" />
-            <button class="delete-btn" type="submit">
-                <img src="../../img/delete16.png" />
-            </button>
-        </form>
 </div>
