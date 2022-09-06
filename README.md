@@ -1,7 +1,36 @@
-# Tecnologias Web 2022 ☀️
->Primeiro projeto da disciplina que visa a integração de backend e frontent utilizando banco de dados SQL
+# `📝` `Get-it`
 
-## Sobre o projeto ✅
+### Sobre o aplicativo
+>Anote seus compromissos, tarefas, lista de compras e tudo que julgar necessário de forma rápida e prática.
 
-Projeto simples utilizado para anotar coisas por meio de "post-its" virtuais
+### Execução
+>Basta executar o arquivo main.py e acessar a URL: http://localhost:8080/ após a execução.
 
+
+## Requisições:
+
+<details>
+  <summary>🎫 POST </summary>
+
+  Utilizada para salvar as anotações na Database.
+
+</details>
+
+<details>
+  <summary>🎫 GET</summary>
+  Utilizada para requisitar os dados pedidos pelo usuário.
+</details>
+
+<details>
+    <summary>🎫 DELETE</summary>
+    Deleta os dados requisitados pelo usuário
+</details>
+
+<details>
+    <summary>🎫 UPDATE</summary>
+    Atualiza os dados requisitados pelo usuário
+</details>
+
+
+## `⚠️` Licença:
+- [MIT License](https://choosealicense.com/licenses/mit/)
