@@ -28,6 +28,9 @@ def index(request):
         post = True
         if("delete" in params):
             db.delete(params["delete"])
+        elif("edit" in params):
+            note = database.Note(params["edit"], params["titulo"], params["detalhes"])
+            db.update(note)
         else:
             # Verifica se os campos não estão vazios
             if (params["titulo"] != "" and params["detalhes"] != ""):
@@ -43,7 +46,6 @@ def index(request):
         for dados in db.get_all()
     ]
     notes = '\n'.join(notes_li)
-    print("notes li",notes_li)
     
     resp = build_response(body=load_template('index.html').format(notes=notes)) if not(post) else build_response(code=300, reason="See Others" ,body=load_template('index.html').format(notes=notes)) 
 
