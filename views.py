@@ -29,8 +29,10 @@ def index(request):
         if("delete" in params):
             db.delete(params["delete"])
         else:
-            db.add(database.Note(None, params['titulo'], params['detalhes']))
-    
+            # Verifica se os campos não estão vazios
+            if (params["titulo"] != "" and params["detalhes"] != ""):
+                note = database.Note(None, params["titulo"], params["detalhes"])
+                db.add(note)
 
     # O RESTO DO CÓDIGO DA FUNÇÃO index CONTINUA DAQUI PARA BAIXO...
     
