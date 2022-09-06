@@ -28,4 +28,3 @@ function getRandomInt(min, max) {
       )} card-rotation-${getRandomInt(1, 11)}`;
     }
   });
-  

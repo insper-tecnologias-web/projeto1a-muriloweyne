@@ -25,24 +25,30 @@
     </div>
 
     <main class="container">
-      <form class="form-card" method="post">
-        <input
-          class="form-card-title"
-          type="text"
-          name="titulo"
-          placeholder="Titulo"
-        />
-        <textarea
-          class="autoresize"
-          name="detalhes"
-          placeholder="Digite o conteudo..."
-        ></textarea>
-        <button class="btn" type="submit">Criar</button>
-      </form>
+      <div class="forms-container">
+        <form id="form-card-id" class="form-card" method="post" onsubmit="return validateForm()" required>
+          <div class="form-title">
+            <h2 class="form-title-text">Criar nota</h2>
+          </div>
+          <input
+            class="form-card-title"
+            type="text"
+            name="titulo"
+            placeholder="Titulo"
+          />
+          <textarea
+            class="autoresize"
+            name="detalhes"
+            placeholder="Digite o conteudo..."
+          ></textarea>
+          <button class="btn" type="submit">Criar</button>
+        </form>
+      </div>
       <div class="card-container">
         {notes}
       </div>
     </main>
     <script type="text/javascript" src="templates/getit.js"></script> 
+    <script type="text/javascript" src="templates/script.js"></script>
   </body>
 </html>
