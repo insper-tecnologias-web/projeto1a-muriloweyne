@@ -1,11 +1,7 @@
 import sqlite3
 from dataclasses import dataclass
 
-@dataclass
-class Note:
-    id: int = None
-    title: str = None
-    content: str = ''
+
 
 class Database():
     
@@ -33,7 +29,10 @@ class Database():
         self.conn.execute("DELETE FROM note WHERE id = ?", (note_id,))
         self.conn.commit()
 
-
-  
+@dataclass
+class Note:
+    id: int = None
+    title: str = None
+    content: str = ''
 
     
