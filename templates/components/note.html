@@ -28,12 +28,12 @@
             </span>
         </div>
         <div class="modal-body">
-            <form class="edit-form" method="post">
+            <form class="edit-form" method="post" onsubmit="return validateEditForm()" required>
                 <input type="hidden" name="edit" value="{id}" />
                 <label for="title">Titulo</label>
-                <input type="text" name="titulo" value="{title}" />
+                <input class="edit-title-input" type="text" name="titulo" value="{title}" />
                 <label for="details">Conteudo</label>
-                <textarea name="detalhes">{details}</textarea>
+                <textarea class="edit-details-input" name="detalhes">{details}</textarea>
                 <button class="save-btn" type="submit">Confirmar</button>
             </form>
         </div>

@@ -29,8 +29,9 @@ def index(request):
         if("delete" in params):
             db.delete(params["delete"])
         elif("edit" in params):
-            note = database.Note(params["edit"], params["titulo"], params["detalhes"])
-            db.update(note)
+            if(params["titulo"] != "" and params["detalhes"] != ""):
+                note = database.Note(params["edit"], params["titulo"], params["detalhes"])
+                db.update(note)
         else:
             # Verifica se os campos não estão vazios
             if (params["titulo"] != "" and params["detalhes"] != ""):
