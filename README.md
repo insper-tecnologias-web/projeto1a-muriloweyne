@@ -1,34 +1,34 @@
 # `📝` `Get-it`
 
-### Sobre o aplicativo
+### 📌 Sobre o aplicativo
 >Anote seus compromissos, tarefas, lista de compras e tudo que julgar necessário de forma rápida e prática.
 
-### Execução
+### ▶️ Execução
 >Basta executar o arquivo main.py e acessar a URL: http://localhost:8080/ após a execução.
 
 
-## Requisições:
+## 🛠️ Funcionalidades:
 
 <details>
-  <summary>🎫 POST </summary>
+  <summary>✔️ Verificação de campos vazios</summary>
 
-  Utilizada para salvar as anotações na Database.
+  Nosso aplicativo garante que nenhum dos campos de título e conteúdo podem estar vazios, garantindo uma experiência melhor para o usuário
 
 </details>
 
 <details>
-  <summary>🎫 GET</summary>
-  Utilizada para requisitar os dados pedidos pelo usuário.
+  <summary>🌙 Dark Mode</summary>
+  Não gosta daquela luz branca muito forte? Sem problemas! Basta clicar no ícone da lua no canto superior direito.
 </details>
 
 <details>
-    <summary>🎫 DELETE</summary>
-    Deleta os dados requisitados pelo usuário
+    <summary>🚀 Design Responsivo</summary> 
+    Nosso aplicativo se adequa as proporções da sua tela.
 </details>
 
 <details>
-    <summary>🎫 UPDATE</summary>
-    Atualiza os dados requisitados pelo usuário
+    <summary>✏️ Edição de notas</summary>
+    Nosso aplicativo também permite que você edite as anotações já feitas em algum post it
 </details>
 
 
